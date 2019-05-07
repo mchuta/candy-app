@@ -22,5 +22,13 @@ export class CandyDataService {
     this.candies.push(candy);
   }
 
+  delete(candy: Candy) {
+    this.candies.forEach((c, index) => {
+      if (candy === c) {
+        this.candies.splice(index, 1);
+      }
+    });
+  }
+
   constructor() { }
 }

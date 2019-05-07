@@ -5,6 +5,7 @@
       <th>Name</th>
       <th>Quantity</th>
       <th>Good?</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -12,6 +13,7 @@
       <td>{{candy.name}}</td>
       <td>{{candy.quantity}}</td>
       <td>{{candy.good}}</td>
+      <td><button type="button" (click)="candyDataService.delete(candy)" class="btn btn-danger"><i class="fa fa-trash-alt"></i></button></td>
     </tr>
   </tbody>
 </table>
